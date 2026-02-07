@@ -6,21 +6,24 @@
     <title>Manajemen Kategori</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body { background-color: #f4f6f9; }
+        .card { border: none; border-radius: 12px; }
+        .form-control:focus { box-shadow: none; border-color: #0d6efd; } /* Fokus Biru */
+    </style>
 </head>
-<body style="background-color: #f8f9fa;">
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="/dashboard">
-                <i class="bi bi-speedometer2"></i> Admin Panel
+                <i class="bi bi-rocket-takeoff"></i> Admin Panel
             </a>
             <div class="d-flex gap-2">
                 <a href="/products" class="btn btn-outline-light btn-sm">
                     <i class="bi bi-box-seam"></i> Kelola Produk
                 </a>
-                <a href="/auth/login" class="btn btn-danger btn-sm">
-                    <i class="bi bi-box-arrow-right"></i> Logout
-                </a>
+                <a href="/auth/login" class="btn btn-danger btn-sm">Logout</a>
             </div>
         </div>
     </nav>
@@ -29,27 +32,25 @@
         <div class="row">
             
             <div class="col-md-4 mb-4">
-                <div class="card shadow border-0">
-                    <div class="card-header bg-primary text-white fw-bold">
-                        <i class="bi bi-plus-circle"></i> Tambah Kategori
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white fw-bold py-3">
+                        <i class="bi bi-plus-circle me-1"></i> Tambah Kategori
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <form action="/categories" method="POST">
                             
                             <div class="mb-3">
-                                <label class="form-label fw-bold">Nama Kategori</label>
-                                <input type="text" name="name" class="form-control" 
-                                       placeholder="Contoh: Elektronik" required>
+                                <label class="fw-bold small text-muted">NAMA KATEGORI</label>
+                                <input type="text" name="name" class="form-control" placeholder="Contoh: Elektronik" required>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label fw-bold">Deskripsi</label>
-                                <textarea name="description" class="form-control" rows="3" 
-                                          placeholder="Deskripsi singkat..."></textarea>
+                                <label class="fw-bold small text-muted">DESKRIPSI</label>
+                                <textarea name="description" class="form-control" rows="3" placeholder="Keterangan singkat..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary w-100 fw-bold">
-                                <i class="bi bi-save"></i> Simpan Kategori
+                            <button type="submit" class="btn btn-primary w-100 fw-bold py-2">
+                                <i class="bi bi-save me-1"></i> Simpan Kategori
                             </button>
                         </form>
                     </div>
@@ -57,19 +58,16 @@
             </div>
 
             <div class="col-md-8">
-                <div class="card shadow border-0">
-                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                        <h5 class="mb-0 fw-bold text-secondary">
-                            <i class="bi bi-tags-fill"></i> Daftar Kategori
-                        </h5>
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white py-3">
+                        <h5 class="mb-0 fw-bold text-dark">Daftar Kategori</h5>
                     </div>
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <table class="table table-hover table-striped align-middle mb-0">
+                            <table class="table table-hover align-middle mb-0">
                                 <thead class="table-light">
                                     <tr>
-                                        <th class="ps-4">ID</th>
-                                        <th>Nama Kategori</th>
+                                        <th class="ps-4">Nama</th>
                                         <th>Deskripsi</th>
                                         <th class="text-end pe-4">Aksi</th>
                                     </tr>
@@ -77,24 +75,15 @@
                                 <tbody>
                                     {{#each categories}}
                                     <tr>
-                                        <td class="ps-4 text-muted">#{{this.id}}</td>
-                                        <td>
-                                            <span class="fw-bold text-primary">{{this.name}}</span>
-                                        </td>
+                                        <td class="ps-4 fw-bold text-primary">{{this.name}}</td>
                                         <td class="text-muted small">{{this.description}}</td>
                                         <td class="text-end pe-4">
-                                            <button onclick="confirmDelete({{this.id}}, '{{this.name}}')" 
-                                                    class="btn btn-danger btn-sm" 
-                                                    title="Hapus Kategori">
+                                            <a href="/categories/edit/{{this.id}}" class="btn btn-warning btn-sm text-white me-1">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                            <button onclick="confirmDelete({{this.id}}, '{{this.name}}')" class="btn btn-danger btn-sm">
                                                 <i class="bi bi-trash"></i>
                                             </button>
-                                        </td>
-                                    </tr>
-                                    {{else}}
-                                    <tr>
-                                        <td colspan="4" class="text-center py-4 text-muted">
-                                            <i class="bi bi-clipboard-x fs-1 d-block mb-2"></i>
-                                            Belum ada kategori.
                                         </td>
                                     </tr>
                                     {{/each}}
@@ -108,25 +97,19 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script>
         function confirmDelete(id, name) {
             Swal.fire({
                 title: 'Hapus ' + name + '?',
-                text: "Produk yang pakai kategori ini mungkin akan error!",
+                text: "Produk di kategori ini akan ikut terhapus!",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#d33',
-                cancelButtonColor: '#6c757d',
-                confirmButtonText: 'Ya, Hapus!',
-                cancelButtonText: 'Batal'
+                confirmButtonText: 'Ya, Hapus!'
             }).then((result) => {
-                if (result.isConfirmed) {
-                    window.location.href = `/categories/delete/${id}`;
-                }
+                if (result.isConfirmed) window.location.href = `/categories/delete/${id}`;
             })
         }
     </script>
-
 </body>
 </html>

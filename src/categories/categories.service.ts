@@ -6,10 +6,10 @@ import { Prisma } from '@prisma/client';
 export class CategoriesService {
   constructor(private prisma: PrismaService) {}
 
-  // 1. Ambil Semua Data
+  // 1. Ambil Semua Data (Urut dari terbaru)
   async findAll() {
     return this.prisma.category.findMany({
-      orderBy: { id: 'desc' }, // Urutkan dari yang terbaru
+      orderBy: { id: 'desc' },
     });
   }
 
@@ -21,5 +21,18 @@ export class CategoriesService {
   // 3. Hapus Data
   async remove(id: number) {
     return this.prisma.category.delete({ where: { id } });
+  }
+
+  // --- BARU: Ambil 1 Kategori (Buat Form Edit) ---
+  async findOne(id: number) {
+    return this.prisma.category.findUnique({ where: { id } });
+  }
+
+  // --- BARU: Update Kategori ---
+  async update(id: number, data: any) {
+    return this.prisma.category.update({
+      where: { id },
+      data: data,
+    });
   }
 }
