@@ -1,5 +1,3 @@
-// File: prisma/schema.prisma
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -9,31 +7,27 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// 1. Tabel User (Untuk Login Admin)
 model User {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  password  String
-  name      String
-  createdAt DateTime @default(now())
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+  name     String
 }
 
-// 2. Tabel Kategori (Induk)
 model Category {
   id          Int       @id @default(autoincrement())
   name        String
-  description String?   @db.Text
-  products    Product[] // Relasi ke banyak Produk
-  createdAt   DateTime  @default(now())
+  description String?
+  products    Product[]
 }
 
-// 3. Tabel Produk (Anak)
 model Product {
   id         Int      @id @default(autoincrement())
   name       String
-  price      Int
+  price      Decimal
   stock      Int
-  categoryId Int // Foreign Key (Penghubung)
-  category   Category @relation(fields: [categoryId], references: [id])
-  createdAt  DateTime @default(now())
+  
+  categoryId Int
+  // PERUBAHAN ADA DI SINI (onDelete: Cascade) 👇
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
 }

@@ -57,4 +57,4 @@ Gunakan akun default berikut untuk login:
 * **Password:** `admin123`
 
 ---
-*Dibuat oleh [NAMA KAMU] - 2026*
+*Dibuat oleh muhammad fsabilillah - 2026*

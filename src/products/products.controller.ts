@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Render, Res, Param, ParseIntPipe, Req } from '@nestjs/common';
+import { Controller, Get, Post, Body, Render, Res, Param, ParseIntPipe, Req, Query } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import type { Response } from 'express';
 
@@ -6,44 +6,52 @@ import type { Response } from 'express';
 export class ProductsController {
   constructor(private readonly productsService: ProductsService) {}
 
-  // 1. Tampilkan Halaman Produk
   @Get()
-  async index(@Req() req, @Res() res: Response) {
-    // Cek Login
-    if (!req.session.user) {
-      return res.redirect('/auth/login');
-    }
-
-    // Ambil Data Produk & Data Kategori (Buat Dropdown)
-    const products = await this.productsService.findAll();
+  async index(@Req() req, @Res() res: Response, @Query('search') search: string) {
+    if (!req.session.user) return res.redirect('/auth/login');
+    
+    const products = await this.productsService.findAll(search);
     const categories = await this.productsService.findAllCategories();
 
     return res.render('products/index', {
-      products,
-      categories, // Kirim kategori ke HTML
-      user: req.session.user
+      products, categories, user: req.session.user, searchKeyword: search
     });
   }
 
-  // 2. Proses Tambah Produk
   @Post()
   async create(@Body() body, @Res() res: Response) {
-    // Konversi harga & categoryId jadi angka (karena dari HTML itu String)
     await this.productsService.create({
       name: body.name,
       price: Number(body.price),
       stock: Number(body.stock),
-      category: {
-        connect: { id: Number(body.categoryId) } // <--- Cara hubungkan relasi di Prisma
-      }
+      category: { connect: { id: Number(body.categoryId) } },
     });
     return res.redirect('/products');
   }
 
-  // 3. Hapus Produk
   @Get('delete/:id')
   async remove(@Param('id', ParseIntPipe) id: number, @Res() res: Response) {
     await this.productsService.remove(id);
+    return res.redirect('/products');
+  }
+
+  // --- BARU: Buka Halaman Edit ---
+  @Get('edit/:id')
+  async editPage(@Param('id', ParseIntPipe) id: number, @Res() res: Response) {
+    const product = await this.productsService.findOne(id);
+    const categories = await this.productsService.findAllCategories();
+    return res.render('products/edit', { product, categories });
+  }
+
+  // --- BARU: Proses Simpan Edit ---
+  @Post('update/:id')
+  async update(@Param('id', ParseIntPipe) id: number, @Body() body, @Res() res: Response) {
+    await this.productsService.update(id, {
+      name: body.name,
+      price: Number(body.price),
+      stock: Number(body.stock),
+      categoryId: Number(body.categoryId),
+    });
     return res.redirect('/products');
   }
 }
