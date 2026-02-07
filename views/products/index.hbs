@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card shadow-sm">
+                <div class="card shadow-sm mb-4">
                     <div class="card-header bg-success text-white">Tambah Produk</div>
                     <div class="card-body">
                         <form action="/products" method="POST">
@@ -57,8 +57,22 @@
 
             <div class="col-md-8">
                 <div class="card shadow-sm">
-                    <div class="card-header bg-white">Daftar Produk</div>
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Daftar Produk</h5>
+                    </div>
                     <div class="card-body">
+                        
+                        <form action="/products" method="GET" class="mb-3">
+                            <div class="input-group">
+                                <input type="text" name="search" class="form-control" 
+                                       placeholder="Cari nama produk..." 
+                                       value="{{searchKeyword}}">
+                                <button class="btn btn-primary" type="submit">Cari</button>
+                                {{#if searchKeyword}}
+                                    <a href="/products" class="btn btn-danger">Reset</a>
+                                {{/if}}
+                            </div>
+                        </form>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
