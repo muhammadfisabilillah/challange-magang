@@ -1,97 +1,102 @@
 # 🚀 Admin Panel Management System
 
-> Full-Stack Admin Dashboard built with **NestJS**, **Prisma ORM**, and **MySQL**.
-> Created for Technical Internship Challenge.
+> Sistem Manajemen Admin Full-Stack berbasis **MVC** yang dibangun dengan **NestJS**, **Prisma ORM**, dan **MySQL**.
+> Dibuat untuk memenuhi Technical Internship Challenge.
 
 ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ---
 
-## 📖 About The Project
+## 📖 A. Penjelasan Project
+Aplikasi ini adalah **Web Admin Dashboard** yang berfungsi untuk mengelola data inventaris (Produk dan Kategori). Aplikasi menggunakan pola arsitektur **MVC (Model-View-Controller)** di mana logika bisnis, data, dan tampilan dipisahkan untuk kemudahan pengembangan.
 
-Aplikasi ini adalah **Sistem Manajemen Admin** yang dibangun menggunakan arsitektur **MVC (Model-View-Controller)** dan **Server-Side Rendering**. Aplikasi ini dirancang untuk menangani manajemen data produk dan kategori dengan integritas data yang tinggi.
-
-### ✨ Key Features (Fitur Utama)
-
-1.  🔐 **Secure Authentication**
-    * Sistem Login Admin menggunakan `express-session`.
-    * Password hashing menggunakan `bcrypt`.
-
-2.  📊 **Realtime Dashboard**
-    * Menampilkan statistik jumlah Produk & Kategori secara langsung dari database.
-
-3.  📦 **Product Management (CRUD)**
-    * **Create, Read, Update, Delete** data produk.
-    * **Search Feature:** Pencarian produk berdasarkan nama (Server-side filtering).
-    * **Relasi:** Setiap produk terhubung dengan Kategori.
-
-4.  🏷️ **Category Management (CRUD)**
-    * **Create, Read, Update, Delete** data kategori.
-    * **Cascade Delete:** Menghapus kategori akan otomatis menghapus semua produk di dalamnya (Menjaga database tetap bersih dari data sampah).
-
-5.  🎨 **Modern UI/UX**
-    * **SweetAlert2:** Notifikasi interaktif untuk konfirmasi hapus.
-    * **Bootstrap 5:** Tampilan responsif dengan tema warna konsisten (Hijau untuk Produk, Biru untuk Kategori).
+**Fitur Utama:**
+1.  **Autentikasi:** Login Admin dengan Session & Password Hashing.
+2.  **Manajemen Kategori:** CRUD Kategori dengan proteksi relasi data.
+3.  **Manajemen Produk:** CRUD Produk dengan fitur pencarian (Search) dan relasi ke Kategori.
+4.  **Integritas Data:** Menggunakan *Cascade Delete* (Jika kategori dihapus, produk terkait ikut terhapus).
 
 ---
 
-## 🛠️ Tech Stack
+## 🗄️ B. Desain Database (ER Diagram)
 
-* **Framework:** [NestJS](https://nestjs.com/) (Node.js)
-* **Language:** TypeScript
-* **Database:** MySQL
-* **ORM:** Prisma ORM
-* **Templating:** Handlebars (HBS)
-* **Styling:** Bootstrap 5 & Bootstrap Icons
+Aplikasi menggunakan database relasional **MySQL** dengan skema sebagai berikut:
+
+**1. Tabel User (Admin)**
+* `id` (Int, PK): ID Unik
+* `email` (String, Unique): Email untuk login
+* `password` (String): Password terenkripsi
+* `name` (String): Nama lengkap admin
+
+**2. Tabel Category (Parent)**
+* `id` (Int, PK): ID Kategori
+* `name` (String): Nama kategori
+* `description` (String): Deskripsi singkat
+* *Relasi:* Satu Kategori memiliki banyak Produk (One-to-Many).
+
+**3. Tabel Product (Child)**
+* `id` (Int, PK): ID Produk
+* `name` (String): Nama produk
+* `price` (Decimal): Harga produk
+* `stock` (Int): Jumlah stok
+* `categoryId` (Int, FK): Menghubungkan ke tabel Category
 
 ---
 
-## 🚀 How to Run
+## 📸 C. Screenshot Aplikasi
 
-Ikuti langkah ini untuk menjalankan project di komputer lokal:
+| Halaman Login | Dashboard |
+| :---: | :---: |
+| *(Tempel Screenshot Login Disini)* | *(Tempel Screenshot Dashboard Disini)* |
 
-### 1. Clone Repository
-```bash
-git clone [https://github.com/muhammadfisabilillah/challange-magang.git](https://github.com/muhammadfisabilillah/challange-magang.git)
-cd challange-magang
+| Data Produk | Data Kategori |
+| :---: | :---: |
+| *(Tempel Screenshot Produk Disini)* | *(Tempel Screenshot Kategori Disini)* |
 
-## 🚀 Cara Menjalankan Project (Installation)
+---
 
-1.  **Clone Repository**
+## 📦 D. Dependency (Teknologi Utama)
+
+Berikut adalah library utama yang digunakan dalam `package.json`:
+
+* **Core:** `@nestjs/core`, `@nestjs/common` (Framework utama)
+* **Database:** `prisma`, `@prisma/client` (ORM & Query Builder)
+* **Tampilan:** `hbs` (Handlebars View Engine)
+* **Keamanan:** `bcrypt` (Hashing Password), `express-session` (Manajemen Sesi Login)
+* **Validasi:** `class-validator`, `class-transformer`
+* **Frontend Assets:** `Bootstrap 5`, `SweetAlert2`
+
+---
+
+## 🚀 E. Informasi untuk Developer (Cara Menjalankan)
+
+Panduan untuk meneruskan atau menjalankan project ini di lokal:
+
+1.  **Persiapan Lingkungan:**
+    * Node.js (v16+)
+    * MySQL (XAMPP/Laragon)
+    * Git
+
+2.  **Instalasi:**
     ```bash
-    git clone [https://github.com/USERNAME-KAMU/backend-magang-admin.git](https://github.com/USERNAME-KAMU/backend-magang-admin.git)
-    cd backend-magang-admin
-    ```
-
-2.  **Install Dependencies**
-    ```bash
+    git clone [https://github.com/username/repository-kamu.git](https://github.com/username/repository-kamu.git)
+    cd repository-kamu
     npm install
     ```
 
-3.  **Setup Database**
-    * Buat database baru di MySQL bernama `db_magang`.
-    * Duplikat file `.env.example` menjadi `.env`.
-    * Sesuaikan `DATABASE_URL` dengan password MySQL lokal Anda.
+3.  **Konfigurasi Database:**
+    * Copy file `.env.example` menjadi `.env`.
+    * Sesuaikan `DATABASE_URL` dengan kredensial MySQL lokal Anda.
+    * Jalankan migrasi: `npx prisma db push`
 
-4.  **Migrasi Database (Prisma)**
-    ```bash
-    npx prisma db push
-    ```
-
-5.  **Jalankan Project**
+4.  **Menjalankan Server:**
     ```bash
     npm run start:dev
     ```
-    Akses di browser: http://localhost:3000/auth/login
-
-## 🧪 Testing
-Gunakan akun default berikut untuk login:
-* **Email:** `admin@gmail.com`
-* **Password:** `admin123`
+    Akses aplikasi di: `http://localhost:3000/auth/login`
+    * **Akun Demo:** admin@gmail.com / 123
 
 ---
-*Dibuat oleh muhammad fsabilillah - 2026*
