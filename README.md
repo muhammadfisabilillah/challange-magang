@@ -48,15 +48,12 @@ Aplikasi menggunakan database relasional **MySQL** dengan skema sebagai berikut:
 
 ## 📸 C. Screenshot Aplikasi
 
-| Halaman Login | Dashboard |
-| :---: | :---: |
-| *(Tempel Screenshot Login Disini)* | *(Tempel Screenshot Dashboard Disini)* |
+<img width="1920" height="1028" alt="ss authentication" src="https://github.com/user-attachments/assets/278fa24e-b5ff-4ef1-a6d8-0d5c4b506020" />
+<img width="1920" height="967" alt="ss dashboard admin panel" src="https://github.com/user-attachments/assets/595df85c-74c6-4e1d-96d5-6f57234e9ea1" />
+<img width="1920" height="972" alt="ss admin panel tambah produk" src="https://github.com/user-attachments/assets/9f55d8d9-bb1c-4c4a-a3b1-c6ccecaa4b82" />
+<img width="1920" height="967" alt="ss admin panel kategori" src="https://github.com/user-attachments/assets/36152f71-782b-44e1-b2fd-c3119e2f12e5" />
 
-| Data Produk | Data Kategori |
-| :---: | :---: |
-| *(Tempel Screenshot Produk Disini)* | *(Tempel Screenshot Kategori Disini)* |
 
----
 
 ## 📦 D. Dependency (Teknologi Utama)
 
