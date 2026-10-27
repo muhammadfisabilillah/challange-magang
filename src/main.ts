@@ -21,13 +21,13 @@ async function bootstrap() {
   // Setup Session
   app.use(
     session({
-      secret: 'rahasia-magang-123', // Kunci rahasia (bebas)
+      secret: process.env.SESSION_SECRET ?? 'dev-secret',
       resave: false,
       saveUninitialized: false,
       cookie: { maxAge: 3600000 }, // Sesi aktif 1 jam
     }),
   );
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
