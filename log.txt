@@ -1,0 +1,343 @@
+build	npm install, build, and test	﻿2026-10-27T08:24:19.1263619Z ##[group]Run npm install
+build	npm install, build, and test	2026-10-27T08:24:19.1265080Z ^[[36;1mnpm install^[[0m
+build	npm install, build, and test	2026-10-27T08:24:19.1266321Z ^[[36;1mnpm run build --if-present^[[0m
+build	npm install, build, and test	2026-10-27T08:24:19.1267732Z ^[[36;1mnpm run test --if-present^[[0m
+build	npm install, build, and test	2026-10-27T08:24:19.1484894Z shell: /usr/bin/bash -e {0}
+build	npm install, build, and test	2026-10-27T08:24:19.1486221Z ##[endgroup]
+build	npm install, build, and test	2026-10-27T08:24:22.8468743Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build	npm install, build, and test	2026-10-27T08:24:24.2543192Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build	npm install, build, and test	2026-10-27T08:24:26.1062555Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build	npm install, build, and test	2026-10-27T08:24:26.1075570Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build	npm install, build, and test	2026-10-27T08:24:26.1250258Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build	npm install, build, and test	2026-10-27T08:24:34.5012401Z 
+build	npm install, build, and test	2026-10-27T08:24:34.5013771Z > project-magang@0.0.1 postinstall
+build	npm install, build, and test	2026-10-27T08:24:34.5014827Z > prisma generate
+build	npm install, build, and test	2026-10-27T08:24:34.5015463Z 
+build	npm install, build, and test	2026-10-27T08:24:34.9297118Z Prisma schema loaded from prisma/schema.prisma
+build	npm install, build, and test	2026-10-27T08:24:35.1895260Z 
+build	npm install, build, and test	2026-10-27T08:24:35.1896863Z ✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 51ms
+build	npm install, build, and test	2026-10-27T08:24:35.1897633Z 
+build	npm install, build, and test	2026-10-27T08:24:35.1898372Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+build	npm install, build, and test	2026-10-27T08:24:35.1899084Z 
+build	npm install, build, and test	2026-10-27T08:24:35.1900234Z Tip: Curious about the SQL queries Prisma ORM generates? Optimize helps you enhance your visibility: https://pris.ly/tip-2-optimize
+build	npm install, build, and test	2026-10-27T08:24:35.1901191Z 
+build	npm install, build, and test	2026-10-27T08:24:35.3948825Z 
+build	npm install, build, and test	2026-10-27T08:24:35.3949745Z added 737 packages, and audited 738 packages in 16s
+build	npm install, build, and test	2026-10-27T08:24:35.3950375Z 
+build	npm install, build, and test	2026-10-27T08:24:35.3950704Z 149 packages are looking for funding
+build	npm install, build, and test	2026-10-27T08:24:35.3951225Z   run `npm fund` for details
+build	npm install, build, and test	2026-10-27T08:24:35.4552517Z 
+build	npm install, build, and test	2026-10-27T08:24:35.4553740Z 28 vulnerabilities (1 low, 9 moderate, 16 high, 2 critical)
+build	npm install, build, and test	2026-10-27T08:24:35.4554368Z 
+build	npm install, build, and test	2026-10-27T08:24:35.4554667Z To address all issues, run:
+build	npm install, build, and test	2026-10-27T08:24:35.4557240Z   npm audit fix
+build	npm install, build, and test	2026-10-27T08:24:35.4557865Z 
+build	npm install, build, and test	2026-10-27T08:24:35.4558196Z Run `npm audit` for details.
+build	npm install, build, and test	2026-10-27T08:24:35.6015054Z 
+build	npm install, build, and test	2026-10-27T08:24:35.6017832Z > project-magang@0.0.1 build
+build	npm install, build, and test	2026-10-27T08:24:35.6018800Z > nest build
+build	npm install, build, and test	2026-10-27T08:24:35.6020048Z 
+build	npm install, build, and test	2026-10-27T08:24:38.7601766Z 
+build	npm install, build, and test	2026-10-27T08:24:38.7602529Z > project-magang@0.0.1 test
+build	npm install, build, and test	2026-10-27T08:24:38.7603570Z > jest
+build	npm install, build, and test	2026-10-27T08:24:38.7603811Z 
+build	npm install, build, and test	2026-10-27T08:24:40.4835536Z FAIL src/categories/categories.controller.spec.ts
+build	npm install, build, and test	2026-10-27T08:24:40.4894464Z   ● CategoriesController › should be defined
+build	npm install, build, and test	2026-10-27T08:24:40.4923904Z 
+build	npm install, build, and test	2026-10-27T08:24:40.4954845Z     Nest can't resolve dependencies of the CategoriesService (?). Please make sure that the argument PrismaService at index [0] is available in the RootTestModule context.
+build	npm install, build, and test	2026-10-27T08:24:40.4983397Z 
+build	npm install, build, and test	2026-10-27T08:24:40.5013705Z     Potential solutions:
+build	npm install, build, and test	2026-10-27T08:24:40.5043776Z     - Is RootTestModule a valid NestJS module?
+build	npm install, build, and test	2026-10-27T08:24:40.5073915Z     - If PrismaService is a provider, is it part of the current RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.5084121Z     - If PrismaService is exported from a separate @Module, is that module imported within RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.5133534Z       @Module({
+build	npm install, build, and test	2026-10-27T08:24:40.5160570Z         imports: [ /* the Module containing PrismaService */ ]
+build	npm install, build, and test	2026-10-27T08:24:40.5183516Z       })
+build	npm install, build, and test	2026-10-27T08:24:40.5243399Z 
+build	npm install, build, and test	2026-10-27T08:24:40.5324353Z     For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+build	npm install, build, and test	2026-10-27T08:24:40.5353412Z 
+build	npm install, build, and test	2026-10-27T08:24:40.5414171Z     ^[[0m ^[[90m  7 |^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.5464108Z      ^[[90m  8 |^[[39m   beforeEach(^[[36masync^[[39m () ^[[33m=>^[[39m {
+build	npm install, build, and test	2026-10-27T08:24:40.5515151Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m  9 |^[[39m     ^[[36mconst^[[39m module^[[33m:^[[39m ^[[33mTestingModule^[[39m ^[[33m=^[[39m ^[[36mawait^[[39m ^[[33mTest^[[39m^[[33m.^[[39mcreateTestingModule({
+build	npm install, build, and test	2026-10-27T08:24:40.5543915Z      ^[[90m    |^[[39m                                   ^[[31m^[[1m^^[[22m^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.5589336Z      ^[[90m 10 |^[[39m       controllers^[[33m:^[[39m [^[[33mCategoriesController^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.5644199Z      ^[[90m 11 |^[[39m       providers^[[33m:^[[39m [^[[33mCategoriesService^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.5702582Z      ^[[90m 12 |^[[39m     })^[[33m.^[[39mcompile()^[[33m;^[[39m^[[0m
+build	npm install, build, and test	2026-10-27T08:24:40.5712515Z 
+build	npm install, build, and test	2026-10-27T08:24:40.5764370Z       at TestingInjector.lookupComponentInParentModules (../node_modules/@nestjs/core/injector/injector.js:290:19)
+build	npm install, build, and test	2026-10-27T08:24:40.5794154Z       at TestingInjector.resolveComponentWrapper (../node_modules/@nestjs/testing/testing-injector.js:19:45)
+build	npm install, build, and test	2026-10-27T08:24:40.5822757Z       at resolveParam (../node_modules/@nestjs/core/injector/injector.js:140:38)
+build	npm install, build, and test	2026-10-27T08:24:40.5849368Z           at async Promise.all (index 0)
+build	npm install, build, and test	2026-10-27T08:24:40.5874328Z       at TestingInjector.resolveConstructorParams (../node_modules/@nestjs/core/injector/injector.js:169:27)
+build	npm install, build, and test	2026-10-27T08:24:40.5876175Z       at TestingInjector.loadInstance (../node_modules/@nestjs/core/injector/injector.js:75:13)
+build	npm install, build, and test	2026-10-27T08:24:40.5877903Z       at TestingInjector.loadProvider (../node_modules/@nestjs/core/injector/injector.js:103:9)
+build	npm install, build, and test	2026-10-27T08:24:40.5879378Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:56:13
+build	npm install, build, and test	2026-10-27T08:24:40.5880505Z           at async Promise.all (index 3)
+build	npm install, build, and test	2026-10-27T08:24:40.5881681Z       at TestingInstanceLoader.createInstancesOfProviders (../node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+build	npm install, build, and test	2026-10-27T08:24:40.5883460Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:40:13
+build	npm install, build, and test	2026-10-27T08:24:40.5888826Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.5890008Z       at TestingInstanceLoader.createInstances (../node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+build	npm install, build, and test	2026-10-27T08:24:40.5894213Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+build	npm install, build, and test	2026-10-27T08:24:40.5896054Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-instance-loader.js:9:9)
+build	npm install, build, and test	2026-10-27T08:24:40.5897924Z       at TestingModuleBuilder.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-module.builder.js:118:9)
+build	npm install, build, and test	2026-10-27T08:24:40.5900011Z       at TestingModuleBuilder.compile (../node_modules/@nestjs/testing/testing-module.builder.js:74:9)
+build	npm install, build, and test	2026-10-27T08:24:40.5901271Z       at Object.<anonymous> (categories/categories.controller.spec.ts:9:35)
+build	npm install, build, and test	2026-10-27T08:24:40.5901856Z 
+build	npm install, build, and test	2026-10-27T08:24:40.6901593Z FAIL src/app.controller.spec.ts
+build	npm install, build, and test	2026-10-27T08:24:40.6903281Z   ● AppController › root › should return "Hello World!"
+build	npm install, build, and test	2026-10-27T08:24:40.6933482Z 
+build	npm install, build, and test	2026-10-27T08:24:40.6939278Z     Nest can't resolve dependencies of the AppController (AppService, ?). Please make sure that the argument PrismaService at index [1] is available in the RootTestModule context.
+build	npm install, build, and test	2026-10-27T08:24:40.6940775Z 
+build	npm install, build, and test	2026-10-27T08:24:40.6941119Z     Potential solutions:
+build	npm install, build, and test	2026-10-27T08:24:40.6941863Z     - Is RootTestModule a valid NestJS module?
+build	npm install, build, and test	2026-10-27T08:24:40.6943839Z     - If PrismaService is a provider, is it part of the current RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.6946776Z     - If PrismaService is exported from a separate @Module, is that module imported within RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.6947957Z       @Module({
+build	npm install, build, and test	2026-10-27T08:24:40.6948694Z         imports: [ /* the Module containing PrismaService */ ]
+build	npm install, build, and test	2026-10-27T08:24:40.6949463Z       })
+build	npm install, build, and test	2026-10-27T08:24:40.6949823Z 
+build	npm install, build, and test	2026-10-27T08:24:40.6950618Z     For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+build	npm install, build, and test	2026-10-27T08:24:40.6952103Z 
+build	npm install, build, and test	2026-10-27T08:24:40.6952812Z     ^[[0m ^[[90m  7 |^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.6953989Z      ^[[90m  8 |^[[39m   beforeEach(^[[36masync^[[39m () ^[[33m=>^[[39m {
+build	npm install, build, and test	2026-10-27T08:24:40.6955848Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m  9 |^[[39m     ^[[36mconst^[[39m app^[[33m:^[[39m ^[[33mTestingModule^[[39m ^[[33m=^[[39m ^[[36mawait^[[39m ^[[33mTest^[[39m^[[33m.^[[39mcreateTestingModule({
+build	npm install, build, and test	2026-10-27T08:24:40.6957503Z      ^[[90m    |^[[39m                                ^[[31m^[[1m^^[[22m^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.6958710Z      ^[[90m 10 |^[[39m       controllers^[[33m:^[[39m [^[[33mAppController^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.6960002Z      ^[[90m 11 |^[[39m       providers^[[33m:^[[39m [^[[33mAppService^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.6961126Z      ^[[90m 12 |^[[39m     })^[[33m.^[[39mcompile()^[[33m;^[[39m^[[0m
+build	npm install, build, and test	2026-10-27T08:24:40.6961725Z 
+build	npm install, build, and test	2026-10-27T08:24:40.6962692Z       at TestingInjector.lookupComponentInParentModules (../node_modules/@nestjs/core/injector/injector.js:290:19)
+build	npm install, build, and test	2026-10-27T08:24:40.6964734Z       at TestingInjector.resolveComponentWrapper (../node_modules/@nestjs/testing/testing-injector.js:19:45)
+build	npm install, build, and test	2026-10-27T08:24:40.6966196Z       at resolveParam (../node_modules/@nestjs/core/injector/injector.js:140:38)
+build	npm install, build, and test	2026-10-27T08:24:40.6967026Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.6968053Z       at TestingInjector.resolveConstructorParams (../node_modules/@nestjs/core/injector/injector.js:169:27)
+build	npm install, build, and test	2026-10-27T08:24:40.6969336Z       at TestingInjector.loadInstance (../node_modules/@nestjs/core/injector/injector.js:75:13)
+build	npm install, build, and test	2026-10-27T08:24:40.6970600Z       at TestingInjector.loadController (../node_modules/@nestjs/core/injector/injector.js:94:9)
+build	npm install, build, and test	2026-10-27T08:24:40.6971672Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:68:13
+build	npm install, build, and test	2026-10-27T08:24:40.6972456Z           at async Promise.all (index 0)
+build	npm install, build, and test	2026-10-27T08:24:40.6973977Z       at TestingInstanceLoader.createInstancesOfControllers (../node_modules/@nestjs/core/injector/instance-loader.js:67:9)
+build	npm install, build, and test	2026-10-27T08:24:40.6975310Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:42:13
+build	npm install, build, and test	2026-10-27T08:24:40.6976115Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.6977225Z       at TestingInstanceLoader.createInstances (../node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+build	npm install, build, and test	2026-10-27T08:24:40.6978959Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+build	npm install, build, and test	2026-10-27T08:24:40.6980897Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-instance-loader.js:9:9)
+build	npm install, build, and test	2026-10-27T08:24:40.6991104Z       at TestingModuleBuilder.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-module.builder.js:118:9)
+build	npm install, build, and test	2026-10-27T08:24:40.6993657Z       at TestingModuleBuilder.compile (../node_modules/@nestjs/testing/testing-module.builder.js:74:9)
+build	npm install, build, and test	2026-10-27T08:24:40.6995119Z       at Object.<anonymous> (app.controller.spec.ts:9:32)
+build	npm install, build, and test	2026-10-27T08:24:40.6995771Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7476184Z FAIL src/auth/auth.controller.spec.ts
+build	npm install, build, and test	2026-10-27T08:24:40.7477510Z   ● AuthController › should be defined
+build	npm install, build, and test	2026-10-27T08:24:40.7478113Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7479373Z     Nest can't resolve dependencies of the AuthService (?). Please make sure that the argument PrismaService at index [0] is available in the RootTestModule context.
+build	npm install, build, and test	2026-10-27T08:24:40.7480675Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7481009Z     Potential solutions:
+build	npm install, build, and test	2026-10-27T08:24:40.7481697Z     - Is RootTestModule a valid NestJS module?
+build	npm install, build, and test	2026-10-27T08:24:40.7483484Z     - If PrismaService is a provider, is it part of the current RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.7502158Z     - If PrismaService is exported from a separate @Module, is that module imported within RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.7533801Z       @Module({
+build	npm install, build, and test	2026-10-27T08:24:40.7546200Z         imports: [ /* the Module containing PrismaService */ ]
+build	npm install, build, and test	2026-10-27T08:24:40.7546981Z       })
+build	npm install, build, and test	2026-10-27T08:24:40.7547353Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7548160Z     For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+build	npm install, build, and test	2026-10-27T08:24:40.7550193Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7550746Z     ^[[0m ^[[90m  7 |^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7551646Z      ^[[90m  8 |^[[39m   beforeEach(^[[36masync^[[39m () ^[[33m=>^[[39m {
+build	npm install, build, and test	2026-10-27T08:24:40.7553834Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m  9 |^[[39m     ^[[36mconst^[[39m module^[[33m:^[[39m ^[[33mTestingModule^[[39m ^[[33m=^[[39m ^[[36mawait^[[39m ^[[33mTest^[[39m^[[33m.^[[39mcreateTestingModule({
+build	npm install, build, and test	2026-10-27T08:24:40.7555621Z      ^[[90m    |^[[39m                                   ^[[31m^[[1m^^[[22m^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7556743Z      ^[[90m 10 |^[[39m       controllers^[[33m:^[[39m [^[[33mAuthController^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7557894Z      ^[[90m 11 |^[[39m       providers^[[33m:^[[39m [^[[33mAuthService^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7558908Z      ^[[90m 12 |^[[39m     })^[[33m.^[[39mcompile()^[[33m;^[[39m^[[0m
+build	npm install, build, and test	2026-10-27T08:24:40.7559424Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7560263Z       at TestingInjector.lookupComponentInParentModules (../node_modules/@nestjs/core/injector/injector.js:290:19)
+build	npm install, build, and test	2026-10-27T08:24:40.7561810Z       at TestingInjector.resolveComponentWrapper (../node_modules/@nestjs/testing/testing-injector.js:19:45)
+build	npm install, build, and test	2026-10-27T08:24:40.7567892Z       at resolveParam (../node_modules/@nestjs/core/injector/injector.js:140:38)
+build	npm install, build, and test	2026-10-27T08:24:40.7568806Z           at async Promise.all (index 0)
+build	npm install, build, and test	2026-10-27T08:24:40.7569921Z       at TestingInjector.resolveConstructorParams (../node_modules/@nestjs/core/injector/injector.js:169:27)
+build	npm install, build, and test	2026-10-27T08:24:40.7571596Z       at TestingInjector.loadInstance (../node_modules/@nestjs/core/injector/injector.js:75:13)
+build	npm install, build, and test	2026-10-27T08:24:40.7573340Z       at TestingInjector.loadProvider (../node_modules/@nestjs/core/injector/injector.js:103:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7574679Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:56:13
+build	npm install, build, and test	2026-10-27T08:24:40.7575507Z           at async Promise.all (index 3)
+build	npm install, build, and test	2026-10-27T08:24:40.7576756Z       at TestingInstanceLoader.createInstancesOfProviders (../node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7578213Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:40:13
+build	npm install, build, and test	2026-10-27T08:24:40.7579164Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.7580542Z       at TestingInstanceLoader.createInstances (../node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7582417Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+build	npm install, build, and test	2026-10-27T08:24:40.7584823Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-instance-loader.js:9:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7587292Z       at TestingModuleBuilder.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-module.builder.js:118:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7589141Z       at TestingModuleBuilder.compile (../node_modules/@nestjs/testing/testing-module.builder.js:74:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7590602Z       at Object.<anonymous> (auth/auth.controller.spec.ts:9:35)
+build	npm install, build, and test	2026-10-27T08:24:40.7591259Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7591988Z FAIL src/products/products.controller.spec.ts
+build	npm install, build, and test	2026-10-27T08:24:40.7593385Z   ● ProductsController › should be defined
+build	npm install, build, and test	2026-10-27T08:24:40.7593927Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7595182Z     Nest can't resolve dependencies of the ProductsService (?). Please make sure that the argument PrismaService at index [0] is available in the RootTestModule context.
+build	npm install, build, and test	2026-10-27T08:24:40.7596440Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7597051Z     Potential solutions:
+build	npm install, build, and test	2026-10-27T08:24:40.7597778Z     - Is RootTestModule a valid NestJS module?
+build	npm install, build, and test	2026-10-27T08:24:40.7598821Z     - If PrismaService is a provider, is it part of the current RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.7600285Z     - If PrismaService is exported from a separate @Module, is that module imported within RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.7601357Z       @Module({
+build	npm install, build, and test	2026-10-27T08:24:40.7602380Z         imports: [ /* the Module containing PrismaService */ ]
+build	npm install, build, and test	2026-10-27T08:24:40.7607377Z       })
+build	npm install, build, and test	2026-10-27T08:24:40.7607784Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7608598Z     For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+build	npm install, build, and test	2026-10-27T08:24:40.7609490Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7609919Z     ^[[0m ^[[90m  7 |^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7610825Z      ^[[90m  8 |^[[39m   beforeEach(^[[36masync^[[39m () ^[[33m=>^[[39m {
+build	npm install, build, and test	2026-10-27T08:24:40.7612665Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m  9 |^[[39m     ^[[36mconst^[[39m module^[[33m:^[[39m ^[[33mTestingModule^[[39m ^[[33m=^[[39m ^[[36mawait^[[39m ^[[33mTest^[[39m^[[33m.^[[39mcreateTestingModule({
+build	npm install, build, and test	2026-10-27T08:24:40.7614591Z      ^[[90m    |^[[39m                                   ^[[31m^[[1m^^[[22m^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7615835Z      ^[[90m 10 |^[[39m       controllers^[[33m:^[[39m [^[[33mProductsController^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7617209Z      ^[[90m 11 |^[[39m       providers^[[33m:^[[39m [^[[33mProductsService^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.7618422Z      ^[[90m 12 |^[[39m     })^[[33m.^[[39mcompile()^[[33m;^[[39m^[[0m
+build	npm install, build, and test	2026-10-27T08:24:40.7619031Z 
+build	npm install, build, and test	2026-10-27T08:24:40.7619953Z       at TestingInjector.lookupComponentInParentModules (../node_modules/@nestjs/core/injector/injector.js:290:19)
+build	npm install, build, and test	2026-10-27T08:24:40.7621668Z       at TestingInjector.resolveComponentWrapper (../node_modules/@nestjs/testing/testing-injector.js:19:45)
+build	npm install, build, and test	2026-10-27T08:24:40.7623381Z       at resolveParam (../node_modules/@nestjs/core/injector/injector.js:140:38)
+build	npm install, build, and test	2026-10-27T08:24:40.7624429Z           at async Promise.all (index 0)
+build	npm install, build, and test	2026-10-27T08:24:40.7625641Z       at TestingInjector.resolveConstructorParams (../node_modules/@nestjs/core/injector/injector.js:169:27)
+build	npm install, build, and test	2026-10-27T08:24:40.7627175Z       at TestingInjector.loadInstance (../node_modules/@nestjs/core/injector/injector.js:75:13)
+build	npm install, build, and test	2026-10-27T08:24:40.7628581Z       at TestingInjector.loadProvider (../node_modules/@nestjs/core/injector/injector.js:103:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7629805Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:56:13
+build	npm install, build, and test	2026-10-27T08:24:40.7630709Z           at async Promise.all (index 3)
+build	npm install, build, and test	2026-10-27T08:24:40.7632015Z       at TestingInstanceLoader.createInstancesOfProviders (../node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7633683Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:40:13
+build	npm install, build, and test	2026-10-27T08:24:40.7634585Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.7635760Z       at TestingInstanceLoader.createInstances (../node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7637533Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+build	npm install, build, and test	2026-10-27T08:24:40.7639495Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-instance-loader.js:9:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7641777Z       at TestingModuleBuilder.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-module.builder.js:118:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7643748Z       at TestingModuleBuilder.compile (../node_modules/@nestjs/testing/testing-module.builder.js:74:9)
+build	npm install, build, and test	2026-10-27T08:24:40.7645124Z       at Object.<anonymous> (products/products.controller.spec.ts:9:35)
+build	npm install, build, and test	2026-10-27T08:24:40.7645800Z 
+build	npm install, build, and test	2026-10-27T08:24:40.8931824Z FAIL src/categories/categories.service.spec.ts
+build	npm install, build, and test	2026-10-27T08:24:40.8934158Z   ● CategoriesService › should be defined
+build	npm install, build, and test	2026-10-27T08:24:40.8934854Z 
+build	npm install, build, and test	2026-10-27T08:24:40.8936196Z     Nest can't resolve dependencies of the CategoriesService (?). Please make sure that the argument PrismaService at index [0] is available in the RootTestModule context.
+build	npm install, build, and test	2026-10-27T08:24:40.8939518Z 
+build	npm install, build, and test	2026-10-27T08:24:40.8939892Z     Potential solutions:
+build	npm install, build, and test	2026-10-27T08:24:40.8940561Z     - Is RootTestModule a valid NestJS module?
+build	npm install, build, and test	2026-10-27T08:24:40.8941469Z     - If PrismaService is a provider, is it part of the current RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.8942790Z     - If PrismaService is exported from a separate @Module, is that module imported within RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.8944126Z       @Module({
+build	npm install, build, and test	2026-10-27T08:24:40.8944808Z         imports: [ /* the Module containing PrismaService */ ]
+build	npm install, build, and test	2026-10-27T08:24:40.8945468Z       })
+build	npm install, build, and test	2026-10-27T08:24:40.8945818Z 
+build	npm install, build, and test	2026-10-27T08:24:40.8946526Z     For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+build	npm install, build, and test	2026-10-27T08:24:40.8947321Z 
+build	npm install, build, and test	2026-10-27T08:24:40.8947777Z     ^[[0m ^[[90m  6 |^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.8948564Z      ^[[90m  7 |^[[39m   beforeEach(^[[36masync^[[39m () ^[[33m=>^[[39m {
+build	npm install, build, and test	2026-10-27T08:24:40.8950298Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m  8 |^[[39m     ^[[36mconst^[[39m module^[[33m:^[[39m ^[[33mTestingModule^[[39m ^[[33m=^[[39m ^[[36mawait^[[39m ^[[33mTest^[[39m^[[33m.^[[39mcreateTestingModule({
+build	npm install, build, and test	2026-10-27T08:24:40.8951805Z      ^[[90m    |^[[39m                                   ^[[31m^[[1m^^[[22m^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.8953157Z      ^[[90m  9 |^[[39m       providers^[[33m:^[[39m [^[[33mCategoriesService^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.8954187Z      ^[[90m 10 |^[[39m     })^[[33m.^[[39mcompile()^[[33m;^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.8954898Z      ^[[90m 11 |^[[39m^[[0m
+build	npm install, build, and test	2026-10-27T08:24:40.8955245Z 
+build	npm install, build, and test	2026-10-27T08:24:40.8956135Z       at TestingInjector.lookupComponentInParentModules (../node_modules/@nestjs/core/injector/injector.js:290:19)
+build	npm install, build, and test	2026-10-27T08:24:40.8957798Z       at TestingInjector.resolveComponentWrapper (../node_modules/@nestjs/testing/testing-injector.js:19:45)
+build	npm install, build, and test	2026-10-27T08:24:40.8959178Z       at resolveParam (../node_modules/@nestjs/core/injector/injector.js:140:38)
+build	npm install, build, and test	2026-10-27T08:24:40.8960048Z           at async Promise.all (index 0)
+build	npm install, build, and test	2026-10-27T08:24:40.8961237Z       at TestingInjector.resolveConstructorParams (../node_modules/@nestjs/core/injector/injector.js:169:27)
+build	npm install, build, and test	2026-10-27T08:24:40.8962726Z       at TestingInjector.loadInstance (../node_modules/@nestjs/core/injector/injector.js:75:13)
+build	npm install, build, and test	2026-10-27T08:24:40.8964363Z       at TestingInjector.loadProvider (../node_modules/@nestjs/core/injector/injector.js:103:9)
+build	npm install, build, and test	2026-10-27T08:24:40.8965523Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:56:13
+build	npm install, build, and test	2026-10-27T08:24:40.8966377Z           at async Promise.all (index 3)
+build	npm install, build, and test	2026-10-27T08:24:40.8967645Z       at TestingInstanceLoader.createInstancesOfProviders (../node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+build	npm install, build, and test	2026-10-27T08:24:40.8969022Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:40:13
+build	npm install, build, and test	2026-10-27T08:24:40.8969814Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.8970967Z       at TestingInstanceLoader.createInstances (../node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+build	npm install, build, and test	2026-10-27T08:24:40.8972679Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+build	npm install, build, and test	2026-10-27T08:24:40.8974854Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-instance-loader.js:9:9)
+build	npm install, build, and test	2026-10-27T08:24:40.8977057Z       at TestingModuleBuilder.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-module.builder.js:118:9)
+build	npm install, build, and test	2026-10-27T08:24:40.8978732Z       at TestingModuleBuilder.compile (../node_modules/@nestjs/testing/testing-module.builder.js:74:9)
+build	npm install, build, and test	2026-10-27T08:24:40.8979940Z       at Object.<anonymous> (categories/categories.service.spec.ts:8:35)
+build	npm install, build, and test	2026-10-27T08:24:40.8980611Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9223615Z FAIL src/products/products.service.spec.ts
+build	npm install, build, and test	2026-10-27T08:24:40.9225827Z   ● ProductsService › should be defined
+build	npm install, build, and test	2026-10-27T08:24:40.9226374Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9227651Z     Nest can't resolve dependencies of the ProductsService (?). Please make sure that the argument PrismaService at index [0] is available in the RootTestModule context.
+build	npm install, build, and test	2026-10-27T08:24:40.9229445Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9229742Z     Potential solutions:
+build	npm install, build, and test	2026-10-27T08:24:40.9230362Z     - Is RootTestModule a valid NestJS module?
+build	npm install, build, and test	2026-10-27T08:24:40.9231298Z     - If PrismaService is a provider, is it part of the current RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.9232562Z     - If PrismaService is exported from a separate @Module, is that module imported within RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.9233769Z       @Module({
+build	npm install, build, and test	2026-10-27T08:24:40.9234406Z         imports: [ /* the Module containing PrismaService */ ]
+build	npm install, build, and test	2026-10-27T08:24:40.9235075Z       })
+build	npm install, build, and test	2026-10-27T08:24:40.9235388Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9236096Z     For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+build	npm install, build, and test	2026-10-27T08:24:40.9236878Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9237237Z     ^[[0m ^[[90m  6 |^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9237993Z      ^[[90m  7 |^[[39m   beforeEach(^[[36masync^[[39m () ^[[33m=>^[[39m {
+build	npm install, build, and test	2026-10-27T08:24:40.9239654Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m  8 |^[[39m     ^[[36mconst^[[39m module^[[33m:^[[39m ^[[33mTestingModule^[[39m ^[[33m=^[[39m ^[[36mawait^[[39m ^[[33mTest^[[39m^[[33m.^[[39mcreateTestingModule({
+build	npm install, build, and test	2026-10-27T08:24:40.9241123Z      ^[[90m    |^[[39m                                   ^[[31m^[[1m^^[[22m^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9242165Z      ^[[90m  9 |^[[39m       providers^[[33m:^[[39m [^[[33mProductsService^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9243320Z      ^[[90m 10 |^[[39m     })^[[33m.^[[39mcompile()^[[33m;^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9243985Z      ^[[90m 11 |^[[39m^[[0m
+build	npm install, build, and test	2026-10-27T08:24:40.9244341Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9245211Z       at TestingInjector.lookupComponentInParentModules (../node_modules/@nestjs/core/injector/injector.js:290:19)
+build	npm install, build, and test	2026-10-27T08:24:40.9246810Z       at TestingInjector.resolveComponentWrapper (../node_modules/@nestjs/testing/testing-injector.js:19:45)
+build	npm install, build, and test	2026-10-27T08:24:40.9248097Z       at resolveParam (../node_modules/@nestjs/core/injector/injector.js:140:38)
+build	npm install, build, and test	2026-10-27T08:24:40.9248969Z           at async Promise.all (index 0)
+build	npm install, build, and test	2026-10-27T08:24:40.9250060Z       at TestingInjector.resolveConstructorParams (../node_modules/@nestjs/core/injector/injector.js:169:27)
+build	npm install, build, and test	2026-10-27T08:24:40.9251460Z       at TestingInjector.loadInstance (../node_modules/@nestjs/core/injector/injector.js:75:13)
+build	npm install, build, and test	2026-10-27T08:24:40.9252733Z       at TestingInjector.loadProvider (../node_modules/@nestjs/core/injector/injector.js:103:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9254091Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:56:13
+build	npm install, build, and test	2026-10-27T08:24:40.9254898Z           at async Promise.all (index 3)
+build	npm install, build, and test	2026-10-27T08:24:40.9256065Z       at TestingInstanceLoader.createInstancesOfProviders (../node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9257369Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:40:13
+build	npm install, build, and test	2026-10-27T08:24:40.9258173Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.9259297Z       at TestingInstanceLoader.createInstances (../node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9261222Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+build	npm install, build, and test	2026-10-27T08:24:40.9263333Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-instance-loader.js:9:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9265673Z       at TestingModuleBuilder.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-module.builder.js:118:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9267345Z       at TestingModuleBuilder.compile (../node_modules/@nestjs/testing/testing-module.builder.js:74:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9268650Z       at Object.<anonymous> (products/products.service.spec.ts:8:35)
+build	npm install, build, and test	2026-10-27T08:24:40.9269271Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9273917Z FAIL src/auth/auth.service.spec.ts
+build	npm install, build, and test	2026-10-27T08:24:40.9274836Z   ● AuthService › should be defined
+build	npm install, build, and test	2026-10-27T08:24:40.9298898Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9300427Z     Nest can't resolve dependencies of the AuthService (?). Please make sure that the argument PrismaService at index [0] is available in the RootTestModule context.
+build	npm install, build, and test	2026-10-27T08:24:40.9302190Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9302559Z     Potential solutions:
+build	npm install, build, and test	2026-10-27T08:24:40.9303531Z     - Is RootTestModule a valid NestJS module?
+build	npm install, build, and test	2026-10-27T08:24:40.9304538Z     - If PrismaService is a provider, is it part of the current RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.9305934Z     - If PrismaService is exported from a separate @Module, is that module imported within RootTestModule?
+build	npm install, build, and test	2026-10-27T08:24:40.9306989Z       @Module({
+build	npm install, build, and test	2026-10-27T08:24:40.9307689Z         imports: [ /* the Module containing PrismaService */ ]
+build	npm install, build, and test	2026-10-27T08:24:40.9308404Z       })
+build	npm install, build, and test	2026-10-27T08:24:40.9308753Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9309510Z     For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+build	npm install, build, and test	2026-10-27T08:24:40.9310366Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9310884Z     ^[[0m ^[[90m  6 |^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9311918Z      ^[[90m  7 |^[[39m   beforeEach(^[[36masync^[[39m () ^[[33m=>^[[39m {
+build	npm install, build, and test	2026-10-27T08:24:40.9314005Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m  8 |^[[39m     ^[[36mconst^[[39m module^[[33m:^[[39m ^[[33mTestingModule^[[39m ^[[33m=^[[39m ^[[36mawait^[[39m ^[[33mTest^[[39m^[[33m.^[[39mcreateTestingModule({
+build	npm install, build, and test	2026-10-27T08:24:40.9315639Z      ^[[90m    |^[[39m                                   ^[[31m^[[1m^^[[22m^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9316768Z      ^[[90m  9 |^[[39m       providers^[[33m:^[[39m [^[[33mAuthService^[[39m]^[[33m,^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9317829Z      ^[[90m 10 |^[[39m     })^[[33m.^[[39mcompile()^[[33m;^[[39m
+build	npm install, build, and test	2026-10-27T08:24:40.9318591Z      ^[[90m 11 |^[[39m^[[0m
+build	npm install, build, and test	2026-10-27T08:24:40.9319001Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9319983Z       at TestingInjector.lookupComponentInParentModules (../node_modules/@nestjs/core/injector/injector.js:290:19)
+build	npm install, build, and test	2026-10-27T08:24:40.9321705Z       at TestingInjector.resolveComponentWrapper (../node_modules/@nestjs/testing/testing-injector.js:19:45)
+build	npm install, build, and test	2026-10-27T08:24:40.9323352Z       at resolveParam (../node_modules/@nestjs/core/injector/injector.js:140:38)
+build	npm install, build, and test	2026-10-27T08:24:40.9324415Z           at async Promise.all (index 0)
+build	npm install, build, and test	2026-10-27T08:24:40.9325686Z       at TestingInjector.resolveConstructorParams (../node_modules/@nestjs/core/injector/injector.js:169:27)
+build	npm install, build, and test	2026-10-27T08:24:40.9327382Z       at TestingInjector.loadInstance (../node_modules/@nestjs/core/injector/injector.js:75:13)
+build	npm install, build, and test	2026-10-27T08:24:40.9329033Z       at TestingInjector.loadProvider (../node_modules/@nestjs/core/injector/injector.js:103:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9330396Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:56:13
+build	npm install, build, and test	2026-10-27T08:24:40.9331386Z           at async Promise.all (index 3)
+build	npm install, build, and test	2026-10-27T08:24:40.9333060Z       at TestingInstanceLoader.createInstancesOfProviders (../node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9334677Z       at ../node_modules/@nestjs/core/injector/instance-loader.js:40:13
+build	npm install, build, and test	2026-10-27T08:24:40.9335700Z           at async Promise.all (index 1)
+build	npm install, build, and test	2026-10-27T08:24:40.9337135Z       at TestingInstanceLoader.createInstances (../node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9339132Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+build	npm install, build, and test	2026-10-27T08:24:40.9341455Z       at TestingInstanceLoader.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-instance-loader.js:9:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9344124Z       at TestingModuleBuilder.createInstancesOfDependencies (../node_modules/@nestjs/testing/testing-module.builder.js:118:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9346112Z       at TestingModuleBuilder.compile (../node_modules/@nestjs/testing/testing-module.builder.js:74:9)
+build	npm install, build, and test	2026-10-27T08:24:40.9347585Z       at Object.<anonymous> (auth/auth.service.spec.ts:8:35)
+build	npm install, build, and test	2026-10-27T08:24:40.9348325Z 
+build	npm install, build, and test	2026-10-27T08:24:40.9717285Z Test Suites: 7 failed, 7 total
+build	npm install, build, and test	2026-10-27T08:24:40.9718065Z Tests:       7 failed, 7 total
+build	npm install, build, and test	2026-10-27T08:24:40.9718578Z Snapshots:   0 total
+build	npm install, build, and test	2026-10-27T08:24:40.9719113Z Time:        1.848 s
+build	npm install, build, and test	2026-10-27T08:24:40.9719618Z Ran all test suites.
+build	npm install, build, and test	2026-10-27T08:24:41.0103697Z ##[error]Process completed with exit code 1.
